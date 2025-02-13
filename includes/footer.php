@@ -49,7 +49,7 @@
         <!-- Footer Bottom Section -->
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
             <p>© 2025, <span id="colora">Pou Technologies</span>. All Rights Reserved.<br>
-                <span class="text-secondary">version 1.0.2</span>
+                <span class="text-secondary">version 1.0.3</span>
             </p>
             <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-twitter"></i></a></li>
