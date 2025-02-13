@@ -1,0 +1,331 @@
+.full-height {
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana del navegador */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: white;
+}
+/*COLORES PARA LETRAS*/
+#multicolor{
+    font-size: 2em; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: normal;
+    background: linear-gradient(90deg, blue, #bb0fbb, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+#colora{
+    font-size: 1em; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: normal;
+    background: linear-gradient(90deg, blue, #bb0fbb, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+#tornasol-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/*HEADER*/
+
+.header-tr {
+    height: 95px;
+    padding: 0;
+}
+
+@media screen and (max-width: 367px){
+    .header-tr{
+        height: initial;
+    }
+}
+
+/* Asegura que el botón de toggler esté encima de otros elementos */
+.navbar-toggler {
+    position: relative;
+    z-index: 1051; /* Debe ser mayor que el z-index del menú */
+}
+
+/* Asegura que el menú desplegable esté encima de otros elementos */
+.navbar-collapse {
+
+    top: 100%; /* Ajusta según sea necesario */
+    left: 0;
+    right: 0;
+    z-index: 1050; /* Debe ser menor que el z-index del botón de toggler */
+}
+
+
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana del navegador */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image-container {
+    position: absolute;
+    top: -6%; /* Ajusta este valor para subir la imagen */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    object-position: center top; /* Ajusta la posición de la imagen */
+}
+
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+    .hero-section {
+        height: 100vh; /* Asegura que ocupe toda la altura */
+    }
+    
+    .hero-image-container {
+        top: 0; /* Ajusta la posición de la imagen para que no esté elevada */
+    }
+
+    .hero-image {
+        height: 100%; /* Aumenta el tamaño de la imagen para ocupar más espacio */
+        object-position: center center; /* Centra la imagen completamente */
+    }
+}
+
+/* HERO TEXT */
+.hero-text {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    color: inherit; /* Mantiene el color original del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    margin: 0; /* Asegura que no haya desplazamiento del texto */
+}
+
+
+
+
+
+
+/*Movimiento en la zona principal*/
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Movimiento feature box*/
+.featureBox1, .featureBox2, .featureBox3 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.featureBox1.visible, .featureBox2.visible, .featureBox3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*
+Numbers appear
+ */
+.icon-section {
+    /*background-color: #333; !* Ajusta el color según el esquema *!*/
+    padding: 40px 0;
+}
+
+.icon-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon-img {
+    width: 50px;
+    height: 50px;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/*
+breakdown transition
+
+ */
+#breakdown {
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 1s ease-in-out; /* Transición suave de opacidad */
+}
+
+#breakdown.visible {
+    opacity: 1; /* Visible cuando se añade la clase 'visible' */
+}
+
+/*NUMBER*/
+.number {
+    font-family: 'Roboto', sans-serif; /* Cambia 'Roboto' a la fuente que desees */
+    font-size: 2rem; /* Ajusta el tamaño según sea necesario */
+}
+
+/*Card movement*/
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+/*FADEIN ONE BY ONE PROJECT*/
+
+/* Estilo base para el fade-in */
+.fade-in-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Cuando el elemento se vuelve visible, agregamos esta clase */
+.fade-in-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+     /* Estilo para la versión de escritorio */
+ .hero-text h1 {
+     margin-left: -10px;
+ }
+
+.hero-text p.lead {
+    margin-left: -110px;
+}
+
+/*Movimiento en las imagenes de project*/
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.expandable-image {
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: auto;
+}
+
+.image-container:hover .expandable-image {
+    transform: scale(1.2); /* La imagen se agranda un 20% */
+}
+
+
+
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  #cookie-banner button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  #cookie-banner button:hover {
+    background-color: #45a049;
+  }
+
+ /* What is WebSphere Section */
+ .what-is-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.what-is-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.what-is-section p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+
+  
+
+
+
+
+

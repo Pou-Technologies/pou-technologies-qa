@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- META -->
+    <meta name="description" content="Boost your business with our web design, digital marketing, and cybersecurity services. We offer tailored solutions to grow your online presence. Contact us today!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Pou Technologies, all rights reserved">
+    <meta name="theme-color" content="">
+    <title><?php echo isset($pageTitle) ? $pageTitle : "Pou Technologies"; ?></title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/webSiteImages/favicon-32x32.png" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZG9Y8YPVD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-EZG9Y8YPVD');
+    </script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/style/css/css.css">
+</head>
+
+<body>
+    <section class="container">
+        <header class="header-tr p-3 mb-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <nav class="navbar navbar-expand-md" aria-label="Tenth navbar example">
+                        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+                            <!-- Logo -->
+                            <div class="col-auto mx-auto mx-md-0">
+                                <a class="navbar-brand" href="/index.php">
+                                    <img src="/images/webSiteImages/pouTechnologiesLogo.png" alt="Pou Technologies Logo">
+                                </a>
+                            </div>
+
+                            <!-- Botón de colapso (ahora a la derecha) -->
+                            <button class="navbar-toggler d-md-none mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="nav ms-auto justify-content-center flex-wrap">
+                                    <!-- Projects Dropdown -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" style="color: black" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Projects
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                            <li><a class="dropdown-item" href="/views/webSphere.php">WebSphere</a></li>
+                                            <li><a class="dropdown-item" href="/views/cybersecurity.php">Cybersecurity Services</a></li>
+                                            <li><a class="dropdown-item" href="/views/marketing.php">Digital Marketing</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Other Menu Items -->
+                                    <li class="nav-item">
+                                        <a class="nav-link active" style="color: black" aria-current="page" href="/views/contact.php">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" style="color: black" aria-current="page" href="/views/about.php">About Us</a>
+                                    </li>
+
+                                    <!-- Members Dropdown -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-secondary-emphasis" href="#" style="color: black" id="membersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Members
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="membersDropdown">
+                                            <li><a class="dropdown-item" href="/admin/login.php">Login</a></li>
+                                            <li><a class="dropdown-item" href="/admin/singUp.php">Sign-up</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Sign-out</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+
+</body>
+
+</html>
