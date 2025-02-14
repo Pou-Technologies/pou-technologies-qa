@@ -277,7 +277,7 @@ include('../includes/header.php');
             <div class="col">
                 <a href="http://onfiery.com" target="_blank" class="text-decoration-none">
                     <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg hover-zoom" 
-                        style="background-image: url('/images/websitePictures/onfiery.png'); 
+                        style="background-image: url('/images/websitePictures/onFiery.png'); 
                                 background-size: 120%; /* Aleja la imagen */
                                 background-position: center; /* Centra la imagen */
                                 background-repeat: no-repeat;"> <!-- Evita que la imagen se repita -->
