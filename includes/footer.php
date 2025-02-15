@@ -52,9 +52,9 @@
                 <span class="text-secondary">version 1.0.3</span>
             </p>
             <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-twitter"></i></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-instagram"></i></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-facebook"></i></a></li>
+                <!-- <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-x" style="font-size: 1.5rem;"></i></a></li> -->
+                <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/poutechnologies?igsh=MWJkb282Nm96ZnVzZQ==" target="_blank"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/share/15s2bkwjxV/" target="_blank"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a></li>
             </ul>
         </div>
     </footer>
