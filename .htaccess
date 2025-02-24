@@ -2,6 +2,13 @@ Options -Indexes
 RewriteEngine On
 RewriteBase /
 
+
+# Ocultar la extensión .php en todas las URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/views/$1.php -f
+RewriteRule ^(.*)$ views/$1.php [L]
+
 # Ocultar el index.php en la URL
 RewriteCond %{THE_REQUEST} \s/index\.php [NC]
 RewriteRule ^index\.php$ / [R=301,L]
