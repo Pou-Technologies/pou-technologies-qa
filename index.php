@@ -218,7 +218,7 @@ include 'includes/header.php';
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h2 class="text-muted mt-n5">Ready to get Started?</h2> <!-- Clase de margen negativo para mover hacia arriba -->
                 <div class="justify-content-center py-3">
-                    <a href="contact.html">
+                    <a href="/contact">
                         <button id="colora" class="btn btn-outline-secondary" type="button">Let's Talk About Your Project</button>
                     </a>
                 </div>
