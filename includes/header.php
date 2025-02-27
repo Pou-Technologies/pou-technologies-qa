@@ -66,18 +66,18 @@
                                             Projects
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
-                                            <li><a class="dropdown-item" href="/views/webSphere.php">WebSphere</a></li>
-                                            <li><a class="dropdown-item" href="/views/cybersecurity.php">Cybersecurity Services</a></li>
-                                            <li><a class="dropdown-item" href="/views/marketing.php">Digital Marketing</a></li>
+                                            <li><a class="dropdown-item" href="/webSphere">WebSphere</a></li>
+                                            <li><a class="dropdown-item" href="/cybersecurity">Cybersecurity Services</a></li>
+                                            <li><a class="dropdown-item" href="/marketing">Digital Marketing</a></li>
                                         </ul>
                                     </li>
 
                                     <!-- Other Menu Items -->
                                     <li class="nav-item">
-                                        <a class="nav-link active" style="color: black" aria-current="page" href="/views/contact.php">Contact</a>
+                                        <a class="nav-link active" style="color: black" aria-current="page" href="/contact">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" style="color: black" aria-current="page" href="/views/about.php">About Us</a>
+                                        <a class="nav-link active" style="color: black" aria-current="page" href="/about">About Us</a>
                                     </li>
 
                                     <!-- Members Dropdown -->
@@ -86,8 +86,8 @@
                                             Members
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="membersDropdown">
-                                            <li><a class="dropdown-item" href="/admin/login.php">Login</a></li>
-                                            <li><a class="dropdown-item" href="/admin/singUp.php">Sign-up</a></li>
+                                            <li><a class="dropdown-item" href="/login">Login</a></li>
+                                            <li><a class="dropdown-item" href="/singUp">Sign-up</a></li>
                                             <li>
                                                 <hr class="dropdown-divider">
                                             </li>
