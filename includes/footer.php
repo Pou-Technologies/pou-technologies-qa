@@ -1,5 +1,4 @@
 <!-- FOOTER -->
-<!-- FOOTER -->
 <section class="container mt-5">
     <div class="dropdown-divider"></div>
     <footer class="py-5 border-top">
@@ -9,12 +8,12 @@
                 <h5>About Us</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="/views/about.php" class="nav-link p-0 text-body-secondary">About our Company</a></li>
-                    <li class="nav-item mb-2"><a href="/views/future.php" class="nav-link p-0 text-body-secondary">The Future</a></li>
-                    <li class="nav-item mb-2"><a href="/views/2u.php" class="nav-link p-0 text-body-secondary">2U</a></li>
+                    <li class="nav-item mb-2"><a href="/about" class="nav-link p-0 text-body-secondary">About our Company</a></li>
+                    <li class="nav-item mb-2"><a href="/future" class="nav-link p-0 text-body-secondary">The Future</a></li>
+                    <li class="nav-item mb-2"><a href="/2u" class="nav-link p-0 text-body-secondary">2U</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary disabled">Enerna</a></li>
-                    <li class="nav-item mb-2"><a href="/views/blog.php" class="nav-link p-0 text-body-secondary">Blog</a></li>
-                    <li class="nav-item mb-2"><a href="/views/careers.php" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="/blog" class="nav-link p-0 text-body-secondary">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="/careers" class="nav-link p-0 text-body-secondary">Careers</a></li>
                 </ul>
             </div>
 
@@ -22,8 +21,8 @@
             <div class="col-12 col-md-3 mb-4">
                 <h5>Legal</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="/views/copyright.php" class="nav-link p-0 text-body-secondary">Copyright</a></li>
-                    <li class="nav-item mb-2"><a href="/views/privacy.php" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="/copyright" class="nav-link p-0 text-body-secondary">Copyright</a></li>
+                    <li class="nav-item mb-2"><a href="/privacy" class="nav-link p-0 text-body-secondary">Privacy</a></li>
                 </ul>
             </div>
 
@@ -31,8 +30,8 @@
             <div class="col-12 col-md-3 mb-4">
                 <h5>Support</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="/views/faqs.php" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="/views/contact.php" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+                    <li class="nav-item mb-2"><a href="/faqs" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="/contact" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
                 </ul>
             </div>
 
