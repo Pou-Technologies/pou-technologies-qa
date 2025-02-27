@@ -98,11 +98,11 @@ include 'includes/header.php';
                 <h2 class="text-center text-muted py-3" style="font-weight: normal">Solutions</h2>
                 <p class="d-flex justify-content-lg-center justify-content-center align-items-center flex-wrap"
                     style="white-space: normal; line-height: 1.5; margin: 0; font-size: 1.25rem; color: black; gap: 10px;">
-                    <a href="/views/webSphere.php" class="text-decoration-none" style="color: black;">WebSphere</a>
+                    <a href="/webSphere" class="text-decoration-none" style="color: black;">WebSphere</a>
                     <span>|</span>
-                    <a href="/views/cybersecurity.php" class="text-decoration-none" style="color: black;">Cybersecurity Services</a>
+                    <a href="/cybersecurity" class="text-decoration-none" style="color: black;">Cybersecurity Services</a>
                     <span>|</span>
-                    <a href="/views/marketing.php" class="text-decoration-none" style="color: black;">Digital Marketing</a>
+                    <a href="/marketing" class="text-decoration-none" style="color: black;">Digital Marketing</a>
                 </p>
             </div>
         </div>
