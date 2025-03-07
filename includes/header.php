@@ -26,6 +26,8 @@
     </script>
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Bitdefender-->
+    <a href='http://www.mindmatrix.net' title='Marketing Automation' onclick='window.open(this.href);return(false);' ><script type='text/javascript' src='https://partner-marketing.bitdefender.com/track/dq3v7httw9v4o/payload.js' async> </script></a>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
