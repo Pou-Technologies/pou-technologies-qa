@@ -142,9 +142,9 @@ include 'includes/header.php';
     <section class="container py-5 pb-4">
         <h2 class="text-center text-muted py-2" style="font-weight: lighter">Key collaborators</h2>
         <div class="row justify-content-center text-center">
-            <!-- <div class="col-12 col-md-3 mb-2 mb-md-4">
-                <img src="/images/collaborators/bitdefender.png" alt="Collaborator 1" class="img-fluid mx-auto">
-            </div> -->
+            <div class="col-12 col-md-3 mb-2 mb-md-4">
+                <img src="/images/collaborators/bitdefender.png" alt="Collaborator 1" class="img-fluid mx-auto" style="max-width: 300px;">     
+            </div> 
             <div class="col-12 col-md-3 mb-2 mb-md-4">
                 <img src="/images/collaborators/hostinger.png" alt="Collaborator 2" class="img-fluid mx-auto">
             </div>
