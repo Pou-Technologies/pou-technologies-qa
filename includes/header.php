@@ -90,10 +90,6 @@
                                         <ul class="dropdown-menu" aria-labelledby="membersDropdown">
                                             <li><a class="dropdown-item" href="/login">Login</a></li>
                                             <li><a class="dropdown-item" href="/singUp">Sign-up</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">Sign-out</a></li>
                                         </ul>
                                     </li>
                                 </ul>
