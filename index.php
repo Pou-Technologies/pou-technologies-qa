@@ -207,6 +207,17 @@ include 'includes/header.php';
                     </div>
                 </div>
 
+                <div class="carousel-item container-fluid">
+                    <h2 class="text-secondary" style="font-weight: normal">They were very professional and listened to my vision,they
+                    created a great logo I think will really work for my upcoming brand relaunch  </h2>
+                    <!-- <div>
+                        <img src="images/photos/isabel.jpg" alt="row" class="rounded-circle " style="width: 70px; height: 70px;">
+                    </div> -->
+                    <div class="blockquote">
+                        <p class="mt-3 d-block">Sabrina Sierra &mdash; <span class="fw-bold"> A-List Beauty</span></p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
