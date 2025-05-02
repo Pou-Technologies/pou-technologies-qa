@@ -75,7 +75,7 @@
                             </div>
                         </div>
                          <!-- Google reCAPTCHA -->
-                         <div class="mb-3">
+                            <div class="mb-3 container">
                                 <div class="g-recaptcha" data-sitekey="6Lei4FgqAAAAAPBRtDjdpD2mgMAVBxS8EmWQl9lE"></div>
                             </div>
 
@@ -85,6 +85,18 @@
                                 <button type="submit" name="add_customer" class="btn btn-primary">Subscribe</button>
                             </div>
                         </div>
+
+                        <script>
+                            function toggleOtherField() {
+                                const otherCheckbox = document.getElementById('subject4');
+                                const otherField = document.getElementById('otherField');
+                                if (otherCheckbox.checked) {
+                                    otherField.style.display = 'block';
+                                } else {
+                                    otherField.style.display = 'none';
+                                }
+                            }
+                        </script>
                     </form>
                 </div>
             </div>
