@@ -39,11 +39,59 @@
             <div class="col-12 col-md-3 mb-4">
                 <h5>Newsletter</h5>
                 <p>Monthly digest of what's new and exciting from us.</p>
-                <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modalSubscriptions">
+                   
                     Subscribe
                 </button>
+                
+            </div>
+
+            <!-- Modal Subscriptions-->
+        <div class="modal fade" id="modalSubscriptions" tabindex="-1" aria-labelledby="modalSubscriptions" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSubscriptions">Subscribe to our Newsletter</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form method="POST" action="/includes/process/process_subscribe.php">
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                     
+                        <div class="col-12 container">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">Agree the <a href="/views/privacy.php" target="_blank" class="text-decoration-underline">Privacy Policy</a></label>
+                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                            </div>
+                        </div>
+                         <!-- Google reCAPTCHA -->
+                         <div class="mb-3">
+                                <div class="g-recaptcha" data-sitekey="6Lei4FgqAAAAAPBRtDjdpD2mgMAVBxS8EmWQl9lE"></div>
+                            </div>
+
+                        <div class="modal-footer justify-content-end">
+                            <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                            <div>    
+                                <button type="submit" name="add_customer" class="btn btn-primary">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+
+
+
 
         <!-- Footer Bottom Section -->
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
@@ -119,7 +167,7 @@
                     icon: "error",
                     title: "Oops...",
                     text: "There was an error with your subscription.",
-                    footer: '<a href="pages/faqs.html">Why did I get this issue?</a>'
+                    footer: '<a href="/views/faqs.php">Why did I get this issue?</a>'
                 });
             } else if (newsletterStatus === 'invalid') {
                 Swal.fire({
