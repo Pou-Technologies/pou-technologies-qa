@@ -70,10 +70,10 @@ include('../includes/header.php');
                                 <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-12 container">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                                    <label class="form-check-label" for="invalidCheck">Agree the <a href="/views/privacy.php" target="_blank" class="text-decoration-underline">Privacy Policy</a></label>
                                     <div class="invalid-feedback">You must agree before submitting.</div>
                                 </div>
                             </div>
