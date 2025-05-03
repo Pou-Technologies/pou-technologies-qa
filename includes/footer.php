@@ -59,6 +59,7 @@
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">Please provide your name.</div>
                             </div>
                         
                             <div class="mb-3">
@@ -163,7 +164,7 @@
             
 
             // Verifica el estado del formulario de suscripción
-            const newsletterStatus = urlParams.get('subscriptionForm');
+            const newsletterStatus = urlParams.get('newsletter_status');
             if (newsletterStatus === 'success') {
                 Swal.fire({
                     title: "Subscribed!",
