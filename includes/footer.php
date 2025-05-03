@@ -54,7 +54,7 @@
                         <h5 class="modal-title" id="modalSubscriptions">Subscribe to our Newsletter</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form method="POST" action="/includes/process/process_subscribe.php">
+                    <form method="POST" action="/includes/process/process_subscribe.php" id="subscriptionForm">
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
@@ -66,37 +66,28 @@
                                 <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                         </div>
-                     
-                        <div class="col-12 container">
+                        <div class="container">
+                        <div class="col-12">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                     <label class="form-check-label" for="invalidCheck">Agree the <a href="/views/privacy.php" target="_blank" class="text-decoration-underline">Privacy Policy</a></label>
                                     <div class="invalid-feedback">You must agree before submitting.</div>
                             </div>
                         </div>
-                         <!-- Google reCAPTCHA -->
-                            <div class="mb-3 container">
-                                <div class="g-recaptcha" data-sitekey="6Lei4FgqAAAAAPBRtDjdpD2mgMAVBxS8EmWQl9lE"></div>
-                            </div>
+
+                        </div>
+                        
+                         <!-- reCAPTCHA -->
+                        <div class="mb-3 g-recaptcha container" data-sitekey="6Lei4FgqAAAAAPBRtDjdpD2mgMAVBxS8EmWQl9lE"></div>
+                        <div id="recaptchaError" class="alert alert-danger d-none">Please complete the reCAPTCHA</div>
 
                         <div class="modal-footer justify-content-end">
-                            <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <div>    
                                 <button type="submit" name="add_customer" class="btn btn-primary">Subscribe</button>
                             </div>
                         </div>
 
-                        <script>
-                            function toggleOtherField() {
-                                const otherCheckbox = document.getElementById('subject4');
-                                const otherField = document.getElementById('otherField');
-                                if (otherCheckbox.checked) {
-                                    otherField.style.display = 'block';
-                                } else {
-                                    otherField.style.display = 'none';
-                                }
-                            }
-                        </script>
                     </form>
                 </div>
             </div>
@@ -136,6 +127,9 @@
 <script>
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
+            // Manejar los estados del formulario (tu código existente)
+ 
+    
 
             // Verifica el estado del formulario de proyecto
             const formStatus = urlParams.get('form_status');
@@ -166,8 +160,10 @@
                 });
             }
 
+            
+
             // Verifica el estado del formulario de suscripción
-            const newsletterStatus = urlParams.get('newsletter_status');
+            const newsletterStatus = urlParams.get('subscriptionForm');
             if (newsletterStatus === 'success') {
                 Swal.fire({
                     title: "Subscribed!",
