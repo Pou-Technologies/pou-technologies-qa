@@ -1,4 +1,5 @@
 <!-- FOOTER -->
+
 <section class="container mt-5">
     <div class="dropdown-divider"></div>
     <footer class="py-5 border-top">
@@ -96,7 +97,6 @@
 
 
 
-
         <!-- Footer Bottom Section -->
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top">
             <p>© 2025, <span id="colora">Pou Technologies</span>. All Rights Reserved.<br>
@@ -121,16 +121,23 @@
 
 <!-- Otras librerías (como three.js) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- Finalmente SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- Tu archivo de movimiento (movement.js) -->
 <script src="/style/js/movement.js"></script>
 
+
+
+
+<!-- Swal States -->
 <script>
+
+    
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             // Manejar los estados del formulario (tu código existente)
  
-    
 
             // Verifica el estado del formulario de proyecto
             const formStatus = urlParams.get('form_status');
@@ -160,33 +167,33 @@
                     icon: "warning"
                 });
             }
-
-            
-
-            // Verifica el estado del formulario de suscripción
+     
+            // // Verifica el estado del formulario de suscripción
             const newsletterStatus = urlParams.get('newsletter_status');
-            if (newsletterStatus === 'success') {
-                Swal.fire({
-                    title: "Subscribed!",
-                    text: "Thank you for subscribing to our newsletter.",
-                    icon: "success"
-                });
-            } else if (newsletterStatus === 'error') {
-                Swal.fire({
-                    icon: "error",
-                    title: "Oops...",
-                    text: "There was an error with your subscription.",
-                    footer: '<a href="/views/faqs.php">Why did I get this issue?</a>'
-                });
-            } else if (newsletterStatus === 'invalid') {
-                Swal.fire({
-                    title: "Invalid Email",
-                    text: "Please enter a valid email address.",
-                    icon: "warning"
-                });
-            }
+             if (newsletterStatus === 'success') {
+                 Swal.fire({
+                     title: "Subscribed!",
+                     text: "Thank you for subscribing to our newsletter.",
+                     icon: "success"
+                 });
+             } else if (newsletterStatus === 'error') {
+                 Swal.fire({
+                     icon: "error",
+                     title: "Oops...",
+                     text: "There was an error with your subscription.",
+                     footer: '<a href="/views/faqs.php">Why did I get this issue?</a>'
+                 });
+             } else if (newsletterStatus === 'invalid') {
+                 Swal.fire({
+                     title: "Invalid Email",
+                     text: "Please enter a valid email address.",
+                     icon: "warning"
+                 });
+             }
         });
     </script>
+
+   
 
 </body>
 

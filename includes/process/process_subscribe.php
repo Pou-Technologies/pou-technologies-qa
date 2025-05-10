@@ -1,93 +1,88 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // 1. Validación de reCAPTCHA
-    $recaptcha_secret = "6Lei4FgqAAAAAHend7sirt731Lfn-k3cAuYKX7yG"; // Reemplaza con tu clave secreta
-    $recaptcha_response = $_POST['g-recaptcha-response'] ?? '';
-    
-    // Verificar reCAPTCHA con Google
-    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-    $recaptcha_data = [
-        'secret' => $recaptcha_secret,
-        'response' => $recaptcha_response,
-        'remoteip' => $_SERVER['REMOTE_ADDR']
-    ];
-    
-    $recaptcha_options = [
-        'http' => [
-            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method' => 'POST',
-            'content' => http_build_query($recaptcha_data)
-        ]
-    ];
-    
-    $recaptcha_context = stream_context_create($recaptcha_options);
-    $recaptcha_result = json_decode(file_get_contents($recaptcha_url, false, $recaptcha_context));
-    
-    if (!$recaptcha_result->success) {
-        // Error en reCAPTCHA
-        $redirect_url = $_SERVER['HTTP_REFERER'] . '?newsletter_status=captcha_error';
-        header("Location: $redirect_url");
-        exit();
-    }
 
-    // 2. Validación de campos del formulario
-    $name = isset($_POST['name']) ? htmlspecialchars(trim($_POST['name']), ENT_QUOTES, 'UTF-8') : '';
-    $email = isset($_POST['email']) ? filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL) : '';
-    
-    // Verificar campos obligatorios
-    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $redirect_url = $_SERVER['HTTP_REFERER'] . '?newsletter_status=invalid';
-        header("Location: $redirect_url");
-        exit();
-    }
+    //Agrega lo que quieras mostrar
 
-    // 3. Preparar y enviar el correo
-    $to = "contact@poutechnologies.com";
-    $subject = "Nueva suscripción al newsletter";
-    
-    // Cuerpo del correo en formato HTML y texto plano
-    $body = "
-    <html>
-    <head>
-        <title>Nueva suscripción</title>
-    </head>
-    <body>
-        <h2>Nueva suscripción al newsletter</h2>
-        <p><strong>Nombre:</strong> $name</p>
-        <p><strong>Email:</strong> $email</p>
-        <p><strong>Fecha:</strong> " . date('Y-m-d H:i:s') . "</p>
-    </body>
-    </html>
-    ";
-    
-    // Cabeceras para correo HTML
-    $headers = "From: no-reply@poutechnologies.com\r\n";
-    $headers .= "Reply-To: no-reply@poutechnologies.com\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    
-    // 4. Intentar enviar el correo
-    try {
-        $mail_sent = mail($to, $subject, $body, $headers);
-        
-        if ($mail_sent) {
-            // Registrar en base de datos si es necesario (opcional)
-            // file_put_contents('subscriptions.log', "$email,$name,".date('Y-m-d H:i:s').PHP_EOL, FILE_APPEND);
-            
+    // Recolecta y valida el nombre
+    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8') : '';
+    // Recolecta y valida el correo
+    $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : '';
+
+    // Verifica que el campo de correo no esté vacío y sea válido
+    if (!empty($name) && !empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+
+        // Validación del reCAPTCHA
+        if (isset($_POST['g-recaptcha-response'])) {
+            $captcha = $_POST['g-recaptcha-response'];
+            $secretKey = '6Lei4FgqAAAAAHend7sirt731Lfn-k3cAuYKX7yG'; // Reemplaza con tu clave secreta
+            $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$captcha");
+            $responseKeys = json_decode($response, true);
+
+            // Verifica si el reCAPTCHA fue validado correctamente
+            if (intval($responseKeys["success"]) !== 1) {
+                // Si reCAPTCHA falla, redirige con error
+               // Si el correo fue enviado correctamente, redirige con éxito a la misma página
+            $redirect_url = $_SERVER['HTTP_REFERER'] . '?newsletter_status=error';
+            header("Location: $redirect_url");
+            exit();
+            }
+        } else {
+            // Si reCAPTCHA no se completa, redirige con error
+            // Si el correo fue enviado correctamente, redirige con éxito a la misma página
+            $redirect_url = $_SERVER['HTTP_REFERER'] . '?newsletter_status=invalid';
+            header("Location: $redirect_url");
+            exit();
+        }
+
+        // Prepara el contenido del correo
+        $to = "contact@poutechnologies.com";  // Cambia esto por tu correo de empresa
+        $subject = "Newsletter subscription";
+
+        // Cuerpo del correo
+        $body = "New Newsletter Subscription:\n";
+        //agregar
+        $body .= "Name: $name\n";  // Agregar el nombre del suscriptor
+        $body .= "Email: $email";
+
+        // Sanitización
+        $from = filter_var('no-reply@poutechnologies.com', FILTER_SANITIZE_EMAIL);
+        $reply_to = filter_var('no-reply@poutechnologies.com', FILTER_SANITIZE_EMAIL);
+
+        // Validación de dominio
+        if (!str_contains($from, '@poutechnologies.com')) {
+            die("Error: Unauthorized domain");
+        }
+
+        // Construcción segura de cabeceras
+        $headers = "From: " . str_replace(["\r", "\n"], '', $from) . "\r\n";
+        $headers .= "Reply-To: " . str_replace(["\r", "\n"], '', $reply_to) . "\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "X-AntiAbuse: This is a legitimate email\r\n";
+
+     
+        // Intenta enviar el correo
+        if (mail($to, $subject, $body, $headers)) {
+            // Si el correo fue enviado correctamente, redirige con éxito a la misma página
             $redirect_url = $_SERVER['HTTP_REFERER'] . '?newsletter_status=success';
             header("Location: $redirect_url");
             exit();
         } else {
-            throw new Exception('Error al enviar el correo');
+            // Si hay un error al enviar el correo, redirige con error
+            $redirect_url = $_SERVER['HTTP_REFERER'] . '?newsletter_status=error';
+            header("Location: $redirect_url");
+            exit();
         }
-    } catch (Exception $e) {
-        $redirect_url = $_SERVER['HTTP_REFERER'] . '?newsletter_status=error';
+
+    } else {
+        // Si el correo no es válido, redirige con error
+        $redirect_url = $_SERVER['HTTP_REFERER'] . '?newsletter_status=invalid';
         header("Location: $redirect_url");
         exit();
     }
 } else {
-    // Método no permitido
-    http_response_code(405);
-    die("Método no permitido");
+    // Si el acceso no fue por POST, muestra un mensaje no válido
+    echo "Not valid.";
 }
 ?>
