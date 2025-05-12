@@ -49,11 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $from = filter_var('no-reply@poutechnologies.com', FILTER_SANITIZE_EMAIL);
         $reply_to = filter_var('no-reply@poutechnologies.com', FILTER_SANITIZE_EMAIL);
 
-        // Validación de dominio
-        if (!str_contains($from, '@poutechnologies.com')) {
-            die("Error: Unauthorized domain");
-        }
-
         // Construcción segura de cabeceras
         $headers = "From: " . str_replace(["\r", "\n"], '', $from) . "\r\n";
         $headers .= "Reply-To: " . str_replace(["\r", "\n"], '', $reply_to) . "\r\n";
