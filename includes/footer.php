@@ -191,6 +191,11 @@
                  });
              }
         });
+
+                // Limpia la URL sin recargar la página
+        if (window.history.replaceState) {
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
     </script>
 
    
