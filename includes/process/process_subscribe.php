@@ -50,11 +50,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $reply_to = filter_var('no-reply@poutechnologies.com', FILTER_SANITIZE_EMAIL);
 
         // Construcción segura de cabeceras
-        $headers = "From: " . str_replace(["\r", "\n"], '', $from) . "\r\n";
-        $headers .= "Reply-To: " . str_replace(["\r", "\n"], '', $reply_to) . "\r\n";
-        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        $headers = "From: Pou Technologies <no-reply@poutechnologies.com>\r\n";
+        $headers .= "Reply-To: no-reply@poutechnologies.com\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "X-AntiAbuse: This is a legitimate email\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
 
      
         // Intenta enviar el correo
