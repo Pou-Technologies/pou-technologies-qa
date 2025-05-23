@@ -38,10 +38,10 @@ include('../includes/header.php');
         line-height: 1.8;
     }
 
-    
 
-/*DETAILS BUTTON */
-.details-btn {
+
+    /*DETAILS BUTTON */
+    .details-btn {
         display: none;
         transition: opacity 0.3s ease-in-out;
     }
@@ -50,7 +50,20 @@ include('../includes/header.php');
         display: inline-block;
         opacity: 1;
     }
-    
+
+
+    .info-icon {
+        color: #6c757d;
+        margin-left: 5px;
+        font-size: 0.9em;
+    }
+
+    .sub-features {
+        margin-top: 5px;
+        margin-left: 20px;
+        font-size: 0.9em;
+        color: #6c757d;
+    }
 </style>
 
 <!-- Hero Section -->
@@ -74,9 +87,35 @@ include('../includes/header.php');
     </div>
 </section>
 
-<section class="py-5">
+<!-- Intro -->
+<section class="container py-5" style="margin-top: 100px">
+    <div class="row align-items-center w-100">
+        <!-- Columna para el texto -->
+        <div class="col-md-6 order-md-1 order-2">
+            <h2 class="mb-5">Why WebSphere?</h2>
+            <p class="lead">
+                Because your online success deserves a strategic partner.
+                At WebSphere, we blend innovative design, high-performance technology,
+                and proven digital strategies to build more than just websites—we create
+                growth engines for your business.
+            </p>
+            <p>
+                Your project, powered by precision. We design and develop websites that align with your business
+                objectives—combining strategic UX, cutting-edge tech, and relentless optimization to turn your digital vision into measurable success.
+            </p>
+            <a href="../views/contact.php" class="btn btn-secondary mt-3">Get Your Free Consultation Now</a>
+        </div>
+        <!-- Columna para la imagen -->
+        <div class="col-md-6 text-center order-md-2 order-1 mb-4 mb-md-0">
+            <img src="/images/webSiteImages/sphereWeb.png" alt="WebSphereImage" class="img-fluid rounded">
+        </div>
+    </div>
+</section>
+
+<!--Icons  -->
+<section class="py-5" style="margin-top: 100px">
     <div class="container px-4 py-5" id="icon-grid">
-        <h2 class="pb-2 border-bottom">What Includes</h2>
+        <h2 class="py-4 pb-2 text-center text-secondary ">All in one place</h2>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
             <!-- SEO -->
@@ -118,7 +157,7 @@ include('../includes/header.php');
                 <div>
                     <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Analytics</h3>
                     <p>Track demographics, popular sections, and user behavior to make data-driven.</p>
-                    <a href="#" class="text-primary fw-bold">Details</a>              
+                    <a href="#" class="text-primary fw-bold">Details</a>
                 </div>
             </div>
             <!-- BRANDING -->
@@ -214,7 +253,7 @@ include('../includes/header.php');
                         </linearGradient>
                     </defs>
                     <!-- Aplica el degradado al ícono -->
-                    <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" fill="url(#tornasol-gradient)"/>
+                    <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" fill="url(#tornasol-gradient)" />
                 </svg>
                 <div>
                     <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Social Media Integration</h3>
@@ -259,9 +298,9 @@ include('../includes/header.php');
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3">
             <div class="col">
                 <a href="https://lovely-kitten-4fbc7a.netlify.app/" target="_blank" class="text-decoration-none">
-                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg hover-zoom" 
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg hover-zoom"
                         style="background-image: url('/images/websitePictures/furnitureStore.png'); 
-                                background-size: 120%; /* Aleja la imagen */
+                                background-size: 150%; /* Aleja la imagen */
                                 background-position: center; /* Centra la imagen */
                                 background-repeat: no-repeat;"> <!-- Evita que la imagen se repita -->
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
@@ -271,14 +310,14 @@ include('../includes/header.php');
                         </div>
                     </div>
                 </a>
-                <p class="text-center mt-2 py-3 text-secondary">Multimueble</p> 
+                <p class="text-center mt-2 py-3 text-secondary">Multimueble</p>
             </div>
-            
+
             <div class="col">
                 <a href="http://onfiery.com" target="_blank" class="text-decoration-none">
-                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg hover-zoom" 
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg hover-zoom"
                         style="background-image: url('/images/websitePictures/onFiery.png'); 
-                                background-size: 120%; /* Aleja la imagen */
+                                background-size: 150%; /* Aleja la imagen */
                                 background-position: center; /* Centra la imagen */
                                 background-repeat: no-repeat;"> <!-- Evita que la imagen se repita -->
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
@@ -288,13 +327,13 @@ include('../includes/header.php');
                         </div>
                     </div>
                 </a>
-                <p class="text-center mt-2 py-3 text-secondary">Onfiery</p> 
+                <p class="text-center mt-2 py-3 text-secondary">Onfiery</p>
             </div>
             <div class="col">
                 <a href="http://easycleanca.com" target="_blank" class="text-decoration-none">
-                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg hover-zoom" 
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg hover-zoom"
                         style="background-image: url('/images/websitePictures/easyClean.png'); 
-                                background-size: 120%; /* Aleja la imagen */
+                                background-size: 150%; /* Aleja la imagen */
                                 background-position: center; /* Centra la imagen */
                                 background-repeat: no-repeat;"> <!-- Evita que la imagen se repita -->
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
@@ -304,25 +343,182 @@ include('../includes/header.php');
                         </div>
                     </div>
                 </a>
-                <p class="text-center mt-2 py-3 text-secondary">Easy Clean</p> 
+                <p class="text-center mt-2 py-3 text-secondary">Easy Clean</p>
             </div>
         </div>
     </div>
 </section>
 
 
+<!-- PLANS -->
+<section>
 
-<!-- Feature -->
-<section class="container py-5">
-    <div class="p-5 mb-4 bg-body-tertiary rounded-5" style="background-image: url('/images/webSiteImages/sphere.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 text-secondary">Meet WebSphere</h1>
-        <p class="col-md-8 fs-4">
-        Learn how websphere could adapt to your project and make it successful.
-        </p>
-        <a href="/views/contact.php" class="btn btn-secondary btn-lg">Let's start</a>
-      </div>
-    </div>
+<div class="container py-5">
+    <header>
+
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis" id="multicolor">Plans</h1>
+            <p class="fs-5 text-body-secondary">Whether you're launching your first website or scaling
+                your business, we have tailored solutions to fit your needs and budget. Professional design,
+                powerful features, and hassle-free maintenance — all in one place. Start strong. Grow smarter.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-2 text-center">
+
+            <div class="col">
+                <div class="card mb-3 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Web Starter</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$60<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>✔ Custom-designed website
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Up to 4 pages: Home, Services, About, Contact"></span>
+                            </li>
+                            <li>✔ Hosting & domain included
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Client pays nothing extra"></span>
+                            </li>
+
+                            <li>✔ 1 professional email
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="E.g., hello@business.com"></span>
+                            </li>
+                            <li>✔ Contact form linked to their email
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Contact section connected directly to your professional email"></span>
+                            </li>
+                            <li>✔ Basic logo design
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="1 draft + 1 revision"></span>
+                            </li>
+                            <li>✔ Basic SEO
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="On-page optimization, meta tags, speed"></span>
+                            </li>
+                            <li>✔ Priority support
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="24-hour response time"></span>
+                            </li>
+                            <li>✔ Weekly backups
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Security included"></span>
+                            </li>
+                            <li>✔ Social Media Integration
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Linking to all your social networks"></span>
+                            </li>
+
+                        </ul>
+                        <a href="/views/contact.php">
+                            <button type="button" class="w-100 btn btn-lg btn-primary btn-con-movimiento">Contact Us</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="card mb-3 rounded-3 shadow-sm border-primary ">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal text-dark">Web Pro</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$110<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>🚀 Everything in "Web Starter"
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="All in Web Starter included"></span>
+                            </li>
+                            <li>🔥 Advanced website
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="All the pages your business needs"></span>
+                            </li>
+                            <li>🔥 3 professional emails
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="E.g., sales@, support@, info@."></span>
+                            </li>
+                            <li>🔥 Full branding package
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="
+                                Premium logo (3 drafts + unlimited revisions).
+                                Style guide (colors, fonts, brand manual).
+                                Social media banner designs.
+                                Project Proposal.
+
+                                 "></span>
+                            </li>
+                            <li>🔥 Advanced SEO
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Keyword research, backlink strategy, monthly optimizations."></span>
+                            </li>
+                            <li>🔥 Social Media Integration
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Your website connected to all your social networks"></span>
+                            </li>
+                            <li>🔥 Contact Form Linked to the email
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Contact section connected directly to your professional email"></span>
+                            </li>
+                            <li>🔥 Monthly analytics report
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Traffic and conversion information through Google Analytics"></span>
+                            </li>
+                            <li>🔥 Unlimited content updates
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Text/images changed at no extra cost"></span>
+                            </li>
+
+                        </ul>
+                        <a href="/views/contact.php">
+                           <button type="button" class="w-100 btn btn-lg text-light btn-con-movimiento" style="background-image: linear-gradient(to right, #3498db,rgb(219, 24, 236),rgb(188, 41, 224)) !important;">Contact us</button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="card mb-3 rounded-3 shadow-sm ">
+                   <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal text-dark">Web Pro + Marketing</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$160<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>🚀 Everything in "Web Pro"
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="All in Web starter included"></span>
+                            </li>
+                            <li>🔥 Enterprise Email
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Smar Write AI, Appointments Bookings ,Invoice Builder"></span>
+                            </li>
+                            <li>🔥 Unlimited professional emails
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="E.g., sales@, support@, info@ and more"></span>
+                            </li>
+                            <li>🔥 Full branding package
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Premium logo (3 drafts + unlimited revisions).
+
+                        Style guide (colors, fonts, brand manual).
+
+                        Social media banner designs.
+                        Project Proposal"></span>
+                            </li>
+                            <li>🔥 Advanced SEO
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Keyword research, backlink strategy, monthly optimizations."></span>
+                            </li>
+                            <li>🔥 Integrated newsletter
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Newsletter Integrated in Email"></span>
+                            </li>
+                            <li>🔥 Instagram/Facebook Ads setup
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="1 campaign every 4 month."></span>
+                            </li>
+                            <li>🔥 Monthly analytics report
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Traffic and conversion information through Google Analytics"></span>
+                            </li>
+                            <li>🔥 Marketing Campaign Plan
+                                <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Personalized plan with social media interaction, posts, and annual promotions"></span>
+                            </li>
+
+                        </ul>
+                        <a href="/views/contact.php">
+                            <button type="button" class="w-100 btn btn-lg text-light btn-con-movimiento"  style="background-image: linear-gradient(to right, #3498db,rgb(177, 60, 231),rgb(103, 8, 182)) !important;">Contact us</button>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+ 
+        </div>
+<p class="text-center mt-4"><strong>Do you want to save?</strong> Pay for the full year and get 2 months free on any plan.</p>
+
 </section>
 
 
@@ -330,8 +526,135 @@ include('../includes/header.php');
 
 
 
+        <!-- Questions -->
+        <section class="container py-5">
+            <header>
 
-<!-- Footer -->
-<?php
-include('../includes/footer.php');
-?>
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <h1 class="display-4 fw-normal text-body-emphasis" id="multicolor">Questions</h1>
+                    <p class="fs-5 text-body-secondary">Possible questions you may be asking yourself about our services.</p>
+                </div>
+            </header>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What if I already have a domain or hosting?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <P>No problem! We can migrate your domain or work with your current hosting at no extra cost.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I upgrade my plan later?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <P>
+                                Yes, anytime. Start with the Basic Plan and upgrade to Premium with no penalties.
+                            </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What do I need to get started?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <P>
+                                The process begins when you complete our project questionnaire, providing essential details about your business
+                                and website needs. We then schedule a consultation (in-person or virtual) to review your requirements and present
+                                design concepts. Upon your approval, our team develops your custom site within 20-30 business days, maintaining regular
+                                communication throughout the process until we deliver your fully functional website and handle the launch for you.
+                            </P>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Why hire a custom service instead of using Wix/Squarespace or AI?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <P>
+                                We don’t just build websites — we understand your project,
+                                adapt to its needs, and pour our heart into it. Your site will have a one-of-a-kind design,
+                                crafted with care to reflect your brand’s true identity (no generic templates here!). Beyond looks,
+                                we deliver blazing-fast performance with clean, SEO-optimized code (unlike clunky drag-and-drop tools).
+                                Need custom features like a CRM or booking system? We make it happen — automated platforms can’t compete.
+                                Best of all? We treat your project as if it were our own — because it’s not just a website to us. It’s your dreams,
+                                your ideals, brought to life. While we handle the tech (domain, SEO, etc.), you focus on your business.
+                                And if you ever need help, real humans (who actually care) will reply in hours, not days. Every website we create carries a little piece of us: "
+                                Made with <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg> by
+                                <a class="text-secondary fw-bold" href="https://poutechnologies.com" target="_blank">Pou Technologies</a>."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Can I hire a single service separately?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <P>
+                               Of course, write to us directly explaining the type of service you want and we can adapt it for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Feature -->
+        <section class="container py-5">
+            <div class="p-5 mb-4 bg-body-tertiary rounded-5" style="background-image: url('/images/webSiteImages/sphere.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 text-secondary">Ready for WebSphere?</h1>
+                    <p class="col-md-8 fs-4">
+                        Learn how websphere could adapt to your project and make it successful.
+                    </p>
+                    <a href="/views/contact.php" class="btn btn-secondary btn-lg">Let's start</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Required for Bootstrap tooltips -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                tooltipTriggerList.map(function(tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl);
+                });
+            });
+        </script>
+
+
+
+        <!-- Footer -->
+        <?php
+        include('../includes/footer.php');
+        ?>
