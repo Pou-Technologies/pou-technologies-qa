@@ -83,7 +83,7 @@
                                     </li>
 
                                     <!-- Members Dropdown -->
-                                    <li class="nav-item dropdown">
+                                    <!-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle text-secondary-emphasis disabled" href="#" style="color: black" id="membersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Members
                                         </a>
@@ -91,7 +91,7 @@
                                             <li><a class="dropdown-item" href="/errors/503.php">Login</a></li>
                                             <li><a class="dropdown-item" href="/errors/503.php">Sign-up</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
