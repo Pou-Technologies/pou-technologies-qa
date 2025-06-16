@@ -88,11 +88,11 @@ include('../includes/header.php');
 </section>
 
 <!-- Intro -->
-<section class="container py-5" style="margin-top: 100px">
-    <div class="row align-items-center w-100">
+<section class="container py-5 " style="margin-top: 100px">
+    <div class="row justify-content-center align-items-center w-100">
         <!-- Columna para el texto -->
-        <div class="col-md-6 order-md-1 order-2">
-            <h2 class="mb-5">Why WebSphere?</h2>
+        <div class="col-md-6 order-md-1 order-2 text-center text-md-start">
+            <h2 class="mb-5 col-12 col-sm-8">Why WebSphere?</h2>
             <p class="lead">
                 Because your online success deserves a strategic partner.
                 At WebSphere, we blend innovative design, high-performance technology,
@@ -373,7 +373,7 @@ include('../includes/header.php');
                         <h4 class="my-0 fw-normal">Web Starter</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$60<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <h1 class="card-title pricing-card-title">$720.00<small class="text-body-secondary fw-light"> CAD/Year</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>✔ Custom-designed website
                                 <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Up to 4 pages: Home, Services, About, Contact"></span>
@@ -419,7 +419,7 @@ include('../includes/header.php');
                         <h4 class="my-0 fw-normal text-dark">Web Pro</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$110<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <h1 class="card-title pricing-card-title">$1,300.00<small class="text-body-secondary fw-light"> CAD/Year</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>🚀 Everything in "Web Starter"
                                 <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="All in Web Starter included"></span>
@@ -454,6 +454,7 @@ include('../includes/header.php');
                             <li>🔥 Unlimited content updates
                                 <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Text/images changed at no extra cost"></span>
                             </li>
+                            
 
                         </ul>
                         <a href="/views/contact.php">
@@ -471,7 +472,7 @@ include('../includes/header.php');
                         <h4 class="my-0 fw-normal text-dark">Web Pro + Marketing</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$160<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <h1 class="card-title pricing-card-title">$1,900.00<small class="text-body-secondary fw-light"> CAD/Year</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>🚀 Everything in "Web Pro"
                                 <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="All in Web starter included"></span>
@@ -505,6 +506,7 @@ include('../includes/header.php');
                             <li>🔥 Marketing Campaign Plan
                                 <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Personalized plan with social media interaction, posts, and annual promotions"></span>
                             </li>
+                            
 
                         </ul>
                         <a href="/views/contact.php">
@@ -517,7 +519,7 @@ include('../includes/header.php');
             </div>
  
         </div>
-<p class="text-center mt-4"><strong>Do you want to save?</strong> Pay for the full year and get 2 months free on any plan.</p>
+<p class="text-center mt-4">All our packages include 1 Facebook promotion for <b>FREE!</b></p>
 
 </section>
 
@@ -639,6 +641,11 @@ include('../includes/header.php');
                 </div>
             </div>
         </section>
+
+
+        <section class="py-5 bg-light">
+  
+</section>
 
 
 
