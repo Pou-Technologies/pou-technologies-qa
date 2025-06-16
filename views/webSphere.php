@@ -373,7 +373,7 @@ include('../includes/header.php');
                         <h4 class="my-0 fw-normal">Web Starter</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$720.00<small class="text-body-secondary fw-light"> CAD/Year</small></h1>
+                        <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light" style="font-size: 0.4em;"> CAD/$</small>799<small class="text-body-secondary fw-light" style="font-size: 0.4em;"> / Year</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>✔ Custom-designed website
                                 <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Up to 4 pages: Home, Services, About, Contact"></span>
@@ -419,7 +419,7 @@ include('../includes/header.php');
                         <h4 class="my-0 fw-normal text-dark">Web Pro</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$1,300.00<small class="text-body-secondary fw-light"> CAD/Year</small></h1>
+                        <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light" style="font-size: 0.4em;"> CAD/$</small>1,299<small class="text-body-secondary fw-light" style="font-size: 0.4em;"> / Year</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>🚀 Everything in "Web Starter"
                                 <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="All in Web Starter included"></span>
@@ -472,7 +472,7 @@ include('../includes/header.php');
                         <h4 class="my-0 fw-normal text-dark">Web Pro + Marketing</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">$1,900.00<small class="text-body-secondary fw-light"> CAD/Year</small></h1>
+                        <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light" style="font-size: 0.4em;"> CAD/$</small>1,899<small class="text-body-secondary fw-light" style="font-size: 0.4em;"> / Year</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>🚀 Everything in "Web Pro"
                                 <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="All in Web starter included"></span>
