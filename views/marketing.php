@@ -156,7 +156,7 @@ include('../includes/header.php');
 <!-- Newsletter   SHOWCASE        -->
         <div class="container mt-5">
             <h1 class="text-center mb-4 text-secondary lead" style="font-weight: normal">
-                <a href="newsletter.php" class="text-secondary" style="text-decoration: none;" id="invitationLink">Newsletter</a>
+                <a href="/newsletter.php" class="text-secondary" style="text-decoration: none;" id="invitationLink">Newsletter</a>
             </h1>
             <div class="row">
                 <div class="col-md-4">
@@ -202,7 +202,7 @@ include('../includes/header.php');
 <!--INVITATION SHOWCASE-->
         <div class="container mt-5">
             <h1 class="text-center mb-4 text-secondary lead" style="font-weight: normal">
-                <a href="invitations.php" class="text-secondary" style="text-decoration: none;" id="invitationLink">Electronic Invitations</a>
+                <a href="/invitations.php" class="text-secondary" style="text-decoration: none;" id="invitationLink">Electronic Invitations</a>
             </h1>
             <div class="row">
                 <div class="col-md-4">
