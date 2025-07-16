@@ -8,10 +8,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Pou Technologies, all rights reserved">
-    <meta name="theme-color" content="">
+    <meta name="theme-color" content="#7f2bceff">
     <title><?php echo isset($pageTitle) ? $pageTitle : "Pou Technologies"; ?></title>
+
+    <!-- Meta Open Graph para redes sociales -->
+    <meta property="og:title" content="Pou Technologies - Web Design, Cybersecurity & Marketing">
+    <meta property="og:description" content="Boost your business with our digital services.">
+    <meta property="og:image" content="https://www.poutechnologies.com/pou-technologies-og.jpg">
+    <meta property="og:url" content="https://www.poutechnologies.com">
+    <meta property="og:type" content="website">
+
+        <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pou Technologies">
+    <meta name="twitter:description" content="Web design, marketing, and cybersecurity services.">
+    <meta name="twitter:image" content="https://www.poutechnologies.com/pou-technologies-og.jpg">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="/images/webSiteImages/favicon-32x32.png" type="image/x-icon">
+    <!-- Schema Markup para SEO local -->
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Pou Technologies",
+      "image": "",
+      "description": "We offer web design, digital marketing, and cybersecurity services.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main St",
+        "addressLocality": "Charlottetown",
+        "addressRegion": "PE",
+        "postalCode": "C1C 0A5",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "46.2382",
+        "longitude": "-63.1311"
+      },
+      "telephone": "+1-902-940-4027",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "url": "https://www.poutechnologies.com"
+    }
+    </script>
+    <!-- Fin del Schema Markup -->
+
     <!-- Google tag (gtag.js) -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZG9Y8YPVD"></script>
