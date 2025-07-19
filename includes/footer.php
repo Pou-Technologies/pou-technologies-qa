@@ -24,6 +24,7 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="/copyright" class="nav-link p-0 text-body-secondary">Copyright</a></li>
                     <li class="nav-item mb-2"><a href="/privacy" class="nav-link p-0 text-body-secondary">Privacy</a></li>
+                    <li class="nav-item mb-2"><a href="/termsAndConditions" class="nav-link p-0 text-body-secondary">Terms and Conditions</a></li>
                 </ul>
             </div>
 
