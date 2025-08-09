@@ -324,6 +324,39 @@ breakdown transition
   
 
   
+/* Fondo opcional para diferenciar la sección */
+.solutions-section {
+    background: linear-gradient(to bottom right, #8643d3, #eef2f3);
+}
+
+/* Línea decorativa bajo el título */
+.section-line {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #007bff, #00d4ff);
+    margin: 8px auto 0;
+}
+
+/* Estilo de cada enlace */
+.solution-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: white;
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+.solution-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    background: #a626d8;
+    color: white;
+}
+
 
 
 

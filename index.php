@@ -92,56 +92,148 @@ include 'includes/header.php';
     </section>
 
     <!-- Solutions Section -->
-    <section class="py-5 text-center container" id="solutions" style="margin-top: 100px">
-        <div class="row py-lg-5 fade-in">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h2 class="text-center text-muted py-3" style="font-weight: normal">Solutions</h2>
-                <p class="d-flex justify-content-lg-center justify-content-center align-items-center flex-wrap"
-                    style="white-space: normal; line-height: 1.5; margin: 0; font-size: 1.25rem; color: black; gap: 10px;">
-                    <a href="/webSphere" class="text-decoration-none" style="color: black;">WebSphere</a>
-                    <span>|</span>
-                    <a href="/cybersecurity" class="text-decoration-none" style="color: black;">Cybersecurity Services</a>
-                    <span>|</span>
-                    <a href="/marketing" class="text-decoration-none" style="color: black;">Digital Marketing</a>
-                </p>
-            </div>
+<section class="py-5 solutions-section" id="solutions" style="margin-top: 100px">
+    <div class="container text-center" data-aos="fade-up">
+        <h2 class="fw-light mb-4">
+            Solutions
+            <span class="section-line"></span>
+            
+        </h2>
+        <p>We take care of your online growth</p>
+        
+        <div class="d-flex justify-content-center flex-wrap gap-3 py-5">
+            <a href="/webSphere" class="solution-link">WebSphere</a>
+            <a href="/cybersecurity" class="solution-link">Cybersecurity Services</a>
+            <a href="/marketing" class="solution-link">Digital Marketing</a>
         </div>
-    </section>
+    </div>
+</section>
 
 
-    <!-- Customers Section -->
-    <section class="container py-5 pb-4">
-        <h2 class="text-center text-muted py-3" style="font-weight: lighter">Customers</h2>
+
+  <!-- Customers Section -->
+<section class="container-fluid py-5 customers-section">
+    <div class="container">
+        
+        <!-- Título -->
+        <h2 class="text-center fw-light mb-5 position-relative">
+            Our Customers
+            <span style="display:block; width:60px; height:3px; background:linear-gradient(to right, #9900ffff, #b930b9ff); margin:10px auto 0;"></span>
+        </h2>
+
+        <!-- Logos -->
         <div class="row text-center justify-content-center">
-            <div class="col-6 col-md-4 mb-4">
-                <img src="/images/brands/onfiery.png" alt="Marca 1" class="img-fluid">
-            </div>
-            <div class="col-6 col-md-4 mb-4">
-                <img src="/images/brands/multi.png" alt="Marca 2" class="img-fluid">
-            </div>
-            <div class="col-6 col-md-4 mb-4">
-                <img src="/images/brands/Queseria%20lalito.png" alt="Marca 3" class="img-fluid">
-            </div>
-            <div class="col-6 col-md-4 mb-4">
-                <img src="/images/brands/sweet.png" alt="Marca 4" class="img-fluid">
-            </div>
-            <div class="col-6 col-md-4 mb-4">
-                <img src="/images/brands/esasyClean.png" alt="Marca 6" class="img-fluid">
-            </div>
-            <div class="col-6 col-md-4 mb-4">
-                <img src="/images/brands/party.png" alt="Marca 7" class="img-fluid">
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/onfiery.png" alt="Marca 1" class="img-fluid">
+                </div>
             </div>
 
-            <!-- Agrega más logos según sea necesario -->
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/multi.png" alt="Marca 2" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/Queseria%20lalito.png" alt="Marca 3" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="250">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/sweet.png" alt="Marca 4" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/esasyClean.png" alt="Marca 5" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="350">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/party.png" alt="Marca 6" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/vitran.png" alt="Marca 7" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="450">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/tLo.png" alt="Marca 8" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/listBeauty.png" alt="Marca 9" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/aurora.png" alt="Marca 9" class="img-fluid">
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+    /* Fondo suave */
+    .customers-section {
+        background: linear-gradient(to bottom right, #f9fafb, #eef2f3);
+    }
+
+    /* Tarjeta de logo */
+    .customer-logo {
+        background: white;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+        filter: grayscale(100%);
+        height: 170px; /* altura uniforme */
+    }
+
+    .customer-logo img {
+        max-height: 130px;
+        object-fit: contain;
+    }
+
+    .customer-logo:hover {
+        transform: scale(1.08);
+        filter: grayscale(0%);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+</style>
+
+<!-- AOS Animations -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+</script>
+
 
 
 
     <!-- COLLABORATORS -->
     <section class="container py-5 pb-4">
         <h2 class="text-center text-muted py-2" style="font-weight: lighter">Key collaborators</h2>
-        <div class="row justify-content-center text-center">
+        <span style="display:block; width:60px; height:3px; background:linear-gradient(to right, #9900ffff, #b930b9ff); margin:10px auto 0;"></span>
+        <p class="text-center py-3">We partner with trusted brands to ensure your project’s success.</p>
+        <div class="row justify-content-center text-center py-3">
             <div class="col-12 col-md-3 mb-2 mb-md-4">
                 <img src="/images/collaborators/bitdefender.png" alt="Collaborator 1" class="img-fluid mx-auto" style="max-width: 300px;">     
             </div> 
@@ -224,7 +316,7 @@ include 'includes/header.php';
 
     </section>
     
-    <section class="py-5 text-center container" style="margin-top: 100px; background-image: url('images/webSiteImages/+light.png'); background-size: cover; background-position: center;">
+    <section class="py-5 text-center container " style="margin-top: 100px; background-image: url('images/webSiteImages/+light.png'); background-size: cover; background-position: center;">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h2 class="text-muted mt-n5">Ready to get Started?</h2> <!-- Clase de margen negativo para mover hacia arriba -->
