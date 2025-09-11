@@ -181,6 +181,16 @@ include 'includes/header.php';
                     <img src="/images/brands/aurora.png" alt="Marca 9" class="img-fluid">
                 </div>
             </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/pixel.png" alt="Marca 9" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="customer-logo d-flex align-items-center justify-content-center">
+                    <img src="/images/brands/pinochet.png" alt="Marca 9" class="img-fluid">
+                </div>
+            </div>
         </div>
     </div>
 </section>
