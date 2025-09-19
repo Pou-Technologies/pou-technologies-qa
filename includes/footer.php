@@ -108,7 +108,7 @@
                     <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/poutechnologies?igsh=MWJkb282Nm96ZnVzZQ==" target="_blank"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a></li>
                     <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/share/15s2bkwjxV/" target="_blank"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a></li> 
                     <li class="ms-3"><a class="link-body-emphasis" href="https://www.tiktok.com/@pou.technologies?is_from_webapp=1&sender_device=pc" target="_blank"><i class="bi bi-tiktok" style="font-size: 1.5rem;"></i></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="www.youtube.com/@PouTechnologies" target="_blank"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a></li> 
+                    <li class="ms-3"><a class="link-body-emphasis" href="https://youtube.com/@poutechnologies?si=GEe1J8YfsEAXrPI8" target="_blank"><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a></li> 
                 </ul>
             </div>
 
