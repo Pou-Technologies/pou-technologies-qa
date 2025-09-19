@@ -261,7 +261,9 @@ include 'includes/header.php';
 
     <!--Testimonials-->
     <section id="testimonials" style="margin-top: 100px" class="container py-3">
-        <div id="testimonialsLine" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <h2 class="text-center text-muted py-2" style="font-weight: lighter">People trust in us</h2>
+        <span style="display:block; width:60px; height:3px; background:linear-gradient(to right, #9900ffff, #b930b9ff); margin:10px auto 0;"></span>
+        <div id="testimonialsLine" class="py-5 carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active container-fluid">
 
