@@ -18,50 +18,50 @@
     <meta property="og:url" content="https://www.poutechnologies.com">
     <meta property="og:type" content="website">
 
-        <!-- Twitter Card -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pou Technologies">
     <meta name="twitter:description" content="Web design, marketing, and cybersecurity services.">
     <meta name="twitter:image" content="https://www.poutechnologies.com/pou-technologies-og.jpg">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/images/webSiteImages/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon/favico.png" type="image/x-icon">
     <!-- Schema Markup para SEO local -->
-     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Pou Technologies",
-      "image": "",
-      "description": "We offer web design, digital marketing, and cybersecurity services.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Main St",
-        "addressLocality": "Charlottetown",
-        "addressRegion": "PE",
-        "postalCode": "C1C 0A5",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "46.2382",
-        "longitude": "-63.1311"
-      },
-      "telephone": "+1-902-940-4027",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      "url": "https://www.poutechnologies.com"
-    }
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Pou Technologies",
+            "image": "",
+            "description": "We offer web design, digital marketing, and cybersecurity services.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Main St",
+                "addressLocality": "Charlottetown",
+                "addressRegion": "PE",
+                "postalCode": "C1C 0A5",
+                "addressCountry": "CA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "46.2382",
+                "longitude": "-63.1311"
+            },
+            "telephone": "+1-902-940-4027",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                ],
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            "url": "https://www.poutechnologies.com"
+        }
     </script>
     <!-- Fin del Schema Markup -->
 
@@ -80,17 +80,24 @@
 
     <!--Mic Clarity -->
     <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "sftj0h0y9s");
+        (function(c, l, a, r, i, t, y) {
+            c[a] = c[a] || function() {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "sftj0h0y9s");
     </script>
 
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--Bitdefender-->
-    <a href='http://www.mindmatrix.net' title='Marketing Automation' onclick='window.open(this.href);return(false);' ><script type='text/javascript' src='https://partner-marketing.bitdefender.com/track/dq3v7httw9v4o/payload.js' async> </script></a>
+    <a href='http://www.mindmatrix.net' title='Marketing Automation' onclick='window.open(this.href);return(false);'>
+        <script type='text/javascript' src='https://partner-marketing.bitdefender.com/track/dq3v7httw9v4o/payload.js' async> </script>
+    </a>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,7 +121,7 @@
                             <!-- Logo -->
                             <div class="col-auto mx-auto mx-md-0">
                                 <a class="navbar-brand" href="/index.php">
-                                    <img src="/images/webSiteImages/pouTechnologiesLogo.png" alt="Pou Technologies Logo">
+                                    <img src="/images/logo/pouLogo.svg" alt="Pou Technologies Logo">
                                 </a>
                             </div>
 
@@ -146,15 +153,17 @@
                                     </li>
 
                                     <!-- Members Dropdown -->
-                                    <!-- <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle text-secondary-emphasis disabled" href="#" style="color: black" id="membersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-secondary-emphasis" href="" style="color: black" id="membersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Members
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="membersDropdown">
-                                            <li><a class="dropdown-item" href="/errors/503.php">Login</a></li>
-                                            <li><a class="dropdown-item" href="/errors/503.php">Sign-up</a></li>
-                                        </ul>
-                                    </li> -->
+                                            <li><a class="dropdown-item" href="/admin//login.php">Login</a></li>
+                                            <!-- <li><a class="dropdown-item" href="/admin/singUp.php">Sign-up</a></li>
+                                        </ul> -->
+                                    </li>
+
+
                                 </ul>
                             </div>
                         </div>

@@ -11,7 +11,7 @@ include 'includes/header.php';
         <div class="row align-items-center  g-5">
             <!-- PRINCIPAL IMAGE -->
             <div class="col-12 hero-image-container" >
-            <img src="images/webSiteImages/logoUltra.png" class="img-fluid hero-image" alt="Hero Image">
+            <img src="images/webSiteImages/logoUltra.svg" class="img-fluid hero-image" alt="Hero Image">
                 <!-- Imagen de fondo no visible en el HTML -->
             </div>
             <!-- SLOGAN -->

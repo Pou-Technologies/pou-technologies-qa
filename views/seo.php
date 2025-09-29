@@ -11,7 +11,7 @@ include('../includes/header.php');
   }
 
   .hero-section {
-    background-image: url('../images/webSiteImages/bgSeo.png');
+    background-image: url('../images/webSiteImages/bgSeo.svg');
     /* Ruta de la imagen */
     background-size: cover;
     /* Ajusta la imagen para cubrir toda la sección */

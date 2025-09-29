@@ -12,7 +12,7 @@ include('../includes/header.php');
     }
 
     .hero-section {
-        background-image: url('../images/webSiteImages/bgSeo.png');
+        background-image: url('../images/webSiteImages/bgSeo.svg');
         /* Ruta de la imagen */
         background-size: cover;
         /* Ajusta la imagen para cubrir toda la sección */
@@ -41,6 +41,7 @@ include('../includes/header.php');
 </section>
 
 <!-- What is marketing Section -->
+
 <section class="what-is-section py-5">
     <div class="container">
         <h2 class="text-muted" style="font-weight: normal">What is Digital Marketing</h2>
@@ -54,6 +55,7 @@ include('../includes/header.php');
 </section>
 
 <!-- Servicios -->
+
 <section id="servicios" class="py-5">
     <div class="container text-center">
         <h2 id="multicolor" class="pb-4">Our Services</h2>
@@ -113,7 +115,7 @@ include('../includes/header.php');
                 <div class="card service-card">
                     <img src="../images/webSiteImages/video.png" class="card-img-top" alt="Servicio 3">
                     <div class="card-body">
-                    <h5 class="card-title">Video Design</h5>
+                    <h5 class="card-title">Photo and Video Design</h5>
                     <p class="card-text">We create dynamic and engaging videos tailored to promote your brand or business and captivate your audience.</p>
                     </div>
                 </div>
@@ -122,8 +124,8 @@ include('../includes/header.php');
     </div>
 </section>
 
-
-<section class="container d-flex align-items-center vh-100 py-5">
+<!-- WHY HIRE US -->
+<section class="container d-flex align-items-center  py-5" style="margin-top: 100px; margin-bottom: 150px ">
   <div class="row align-items-center w-100">
     <!-- Columna para el texto -->
     <div class="col-md-6 order-md-1 order-2">
@@ -147,11 +149,126 @@ include('../includes/header.php');
   </div>
 </section>
 
+
+
+<!-- PLANS -->
+<section>
+
+    <div class="container py-5">
+        <header>
+
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-body-emphasis" id="multicolor">✨ Digital Marketing Services</h1>
+                <p class="fs-5 text-body-secondary">Whether you're just getting started or looking to scale, we have the right solution for you.</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-2 text-center">
+
+                <div class="col">
+                    <div class="card mb-3 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Essential Package</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light" style="font-size: 0.4em;"> CAD/$</small>300<small class="text-body-secondary fw-light" style="font-size: 0.4em;"> / Sesion </small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>✔️ 5 promotional graphics
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Up to 4 pages: Home, Services, About, Contact"></span>
+                                </li>
+                                <li>✔ 1 photo session (10 edited photos)
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Client pays nothing extra"></span>
+                                </li>
+
+                                <li>✔ 1 short video (30–50 seconds)
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="E.g., hello@business.com"></span>
+                                </li>
+                            
+                            </ul>
+                            <a href="/views/contact.php">
+                                <button type="button" class="w-100 btn btn-lg btn-primary btn-con-movimiento">Contact Us</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="card mb-3 rounded-3 shadow-sm border-primary ">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal text-dark">Growth Package</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light" style="font-size: 0.4em;"> CAD/$</small> 400<small class="text-body-secondary fw-light" style="font-size: 0.4em;"> / Sesion</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>✔️ 8 promotional graphics
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Up to 4 pages: Home, Services, About, Contact"></span>
+                                </li>
+                                <li>✔ 1 photo session (15 edited photos)
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Client pays nothing extra"></span>
+                                </li>
+
+                                <li>✔ 2 short videos (30–50 seconds)
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="E.g., hello@business.com"></span>
+                                </li>
+                            
+
+
+                            </ul>
+                            <a href="/views/contact.php">
+                                <button type="button" class="w-100 btn btn-lg text-light btn-con-movimiento" style="background-image: linear-gradient(to right, #3498db,rgb(219, 24, 236),rgb(188, 41, 224)) !important;">Contact us</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+
+                    <div class="card mb-3 rounded-3 shadow-sm ">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal text-dark">Premium Package</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light" style="font-size: 0.4em;"> CAD/$</small> 500<small class="text-body-secondary fw-light" style="font-size: 0.4em;"> / Sesion</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>✔️ 12 promotional graphics
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Up to 4 pages: Home, Services, About, Contact"></span>
+                                </li>
+                                <li>✔ 2 photo session (20 edited photos)
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="Client pays nothing extra"></span>
+                                </li>
+
+                                <li>✔ 3 short videos (30–50 seconds)
+                                    <span class="info-icon bi bi-info-circle" data-bs-toggle="tooltip" title="E.g., hello@business.com"></span>
+                                </li>
+                            
+
+                            </ul>
+                            <a href="/views/contact.php">
+                                <button type="button" class="w-100 btn btn-lg text-light btn-con-movimiento" style="background-image: linear-gradient(to right, #3498db,rgb(177, 60, 231),rgb(103, 8, 182)) !important;">Contact us</button>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <p class="text-center mt-4">Packages include 1 Facebook promotion for <b>FREE!</b></p>
+
+</section>
+
+
+
+
+
 <!--CARDS-->
 
 <section class="container" style="margin-top: 100px">
     <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom text-secondary text-center py-5" style="font-weight: normal; font-size: 3em;" id="multicolor">Showcase</h2>
+        <h2 class="pb-5 border-bottom text-secondary text-center py-5" style="font-weight: normal; font-size: 3em;" id="multicolor" style="margin-bottom:100px">Showcase</h2>
         
 <!-- Newsletter   SHOWCASE        -->
         <div class="container mt-5">
