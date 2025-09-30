@@ -192,6 +192,19 @@ include('../includes/header.php');
 </section>
 
 
+<section class="py-5 text-center container " style="margin-top: 100px; background-image: url('images/webSiteImages/+light.png'); background-size: cover; background-position: center;">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h2 class="text-muted mt-n5">Ready to get SEO?</h2> <!-- Clase de margen negativo para mover hacia arriba -->
+                <div class="justify-content-center py-3">
+                    <a href="/contact">
+                        <button id="colora" class="btn btn-outline-secondary" type="button">Let's Talk About Your Project</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 <!-- Footer -->

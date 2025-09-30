@@ -157,7 +157,7 @@ include('../includes/header.php');
                 <div>
                     <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Analytics</h3>
                     <p>Track demographics, popular sections, and user behavior to make data-driven.</p>
-                    <a href="#" class="text-primary fw-bold">Details</a>
+                    <a href="/views/analytics.php" class="text-primary fw-bold">Details</a>
                 </div>
             </div>
             <!-- BRANDING -->
