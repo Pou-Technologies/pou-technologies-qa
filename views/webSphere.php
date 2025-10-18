@@ -363,6 +363,24 @@ include('../includes/header.php');
                 </a>
                 <p class="text-center mt-2 py-3 text-secondary">Vitran PEI</p>
             </div>
+
+            <div class="col py-5">
+                <a href="http://pixellaserprints.ca" target="_blank" class="text-decoration-none">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg hover-zoom"
+                        style="background-image: url('/images/websitePictures/pixel.png'); 
+                                background-size: 150%; /* Aleja la imagen */
+                                background-position: center; /* Centra la imagen */
+                                background-repeat: no-repeat;"> <!-- Evita que la imagen se repita -->
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <p class="text-center mt-2 py-3 text-secondary">Pixel Laser Prints</p>
+            </div>
+
         </div>
     </div>
 </section>
