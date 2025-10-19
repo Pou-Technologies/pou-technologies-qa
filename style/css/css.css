@@ -21,6 +21,29 @@
     }
 }
 
+
+/* Custom CSS - Archivo: style.css */
+
+/*
+* Sección de Espaciado Reutilizable
+* Crea un margen vertical mucho mayor que el py-5 de Bootstrap
+*/
+.section-spacer-xl {
+    /* Espacio superior e inferior grande, aproximadamente el doble que py-5 */
+    padding-top: 8rem !important; 
+    padding-bottom: 8rem !important;
+}
+
+/* Opcional: Define una versión más grande aún */
+.section-spacer-xxl {
+    padding-top: 12rem !important; 
+    padding-bottom: 12rem !important;
+}
+
+/* Opcional: Solo un gran margen inferior para separar el contenido */
+.margin-bottom-xl {
+    margin-bottom: 6rem !important;
+}
 /* Testimonials Section */
 #testimonials {
     padding: 7% 15%;
@@ -358,6 +381,67 @@ breakdown transition
 }
 
 
+
+
+/* login.css */
+.login-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/webSiteImages/bgSeo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+}
+
+.login-section .card {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.login-section .form-label {
+    font-weight: 500;
+}
+
+
+/* PLAY VIDEO */
+.video-container {
+    position: relative;
+    display: inline-block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.video-container:hover .play-button {
+    background: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.share-buttons i {
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.share-buttons i:hover {
+    transform: scale(1.2);
+}
 
 
 

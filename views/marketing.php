@@ -67,6 +67,7 @@ include('../includes/header.php');
                     <div class="card-body">
                         <h5 class="card-title">Social Media Marketing</h5>
                         <p class="card-text">We manage your social media accounts, creating engaging content and advertising campaigns to increase your visibility and engagement.</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -77,6 +78,7 @@ include('../includes/header.php');
                     <div class="card-body">
                         <h5 class="card-title">Advertising Campaigns</h5>
                         <p class="card-text">We create customized advertising campaigns on Google Ads, Facebook and Instagram to reach your target audience efficiently.</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -87,6 +89,7 @@ include('../includes/header.php');
                     <div class="card-body">
                     <h5 class="card-title">Newsletter</h5>
                     <p class="card-text">We design professional and engaging newsletters that keep your audience informed, build loyalty, and drive action through effective communication.</p>
+                    <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -97,6 +100,7 @@ include('../includes/header.php');
                     <div class="card-body">
                         <h5 class="card-title">Logo Design</h5>
                         <p class="card-text">We manage your social media accounts, creating engaging content and advertising campaigns to increase your visibility and engagement.</p>
+                        <a href="/views/logoDesign.php" class="btn btn-outline-primary mt-auto">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -107,6 +111,7 @@ include('../includes/header.php');
                     <div class="card-body">
                     <h5 class="card-title">Promotional Material Design</h5>
                     <p class="card-text">We design eye-catching promotional materials that effectively communicate your message and elevate your brand.</p>
+                    <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -117,6 +122,7 @@ include('../includes/header.php');
                     <div class="card-body">
                     <h5 class="card-title">Photo and Video Design</h5>
                     <p class="card-text">We create dynamic and engaging videos tailored to promote your brand or business and captivate your audience.</p>
+                    <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
                     </div>
                 </div>
             </div>
