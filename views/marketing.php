@@ -67,7 +67,7 @@ include('../includes/header.php');
                     <div class="card-body">
                         <h5 class="card-title">Social Media Marketing</h5>
                         <p class="card-text">We manage your social media accounts, creating engaging content and advertising campaigns to increase your visibility and engagement.</p>
-                        <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+                        <!-- <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ include('../includes/header.php');
                     <div class="card-body">
                         <h5 class="card-title">Advertising Campaigns</h5>
                         <p class="card-text">We create customized advertising campaigns on Google Ads, Facebook and Instagram to reach your target audience efficiently.</p>
-                        <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+                        <!-- <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@ include('../includes/header.php');
                     <div class="card-body">
                     <h5 class="card-title">Newsletter</h5>
                     <p class="card-text">We design professional and engaging newsletters that keep your audience informed, build loyalty, and drive action through effective communication.</p>
-                    <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    <!-- <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@ include('../includes/header.php');
                     <div class="card-body">
                     <h5 class="card-title">Promotional Material Design</h5>
                     <p class="card-text">We design eye-catching promotional materials that effectively communicate your message and elevate your brand.</p>
-                    <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    <!-- <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@ include('../includes/header.php');
                     <div class="card-body">
                     <h5 class="card-title">Photo and Video Design</h5>
                     <p class="card-text">We create dynamic and engaging videos tailored to promote your brand or business and captivate your audience.</p>
-                    <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+                    <!-- <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@ include('../includes/header.php');
 
 
 <!-- PLANS -->
-<section>
+<!-- <section>
 
     <div class="container py-5">
         <header>
@@ -264,10 +264,166 @@ include('../includes/header.php');
             </div>
             <p class="text-center mt-4">Packages include 1 Facebook promotion for <b>FREE!</b></p>
 
+</section> -->
+
+
+<!-- Data-Driven Marketing Section -->
+<section class="section-spacer-xxl bg-light" id="data-driven">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Text content -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class=" text-dark mb-3">Data-Driven Marketing</h2>
+        <p class="text-muted mb-3">
+          At our agency, we use <strong>real data and advanced tools</strong> to measure, analyze, and build strategies that truly work. 
+          We meticulously track <em>days, hours, and audience behavior</em> to connect with your customers at the perfect time.
+        </p>
+        <p class="text-muted">
+          Every campaign we launch is backed by metrics, insights, and constant optimization. 
+          That’s how we ensure a <strong>successful and measurable final product</strong>.
+        </p>
+      </div>
+
+      <!-- Chart & image -->
+      <div class="col-md-6 text-center">
+        <div class="card shadow-sm border-0 p-3">
+          <canvas id="growthChart" height="220"></canvas>
+        </div>
+        <small class="text-muted d-block mt-2">Growth powered by real data</small>
+      </div>
+    </div>
+
+    <!-- Optional image row -->
+    <div class="row text-center mt-5">
+      <div class="py-3 col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/4144/4144558.png" width="80" alt="Data analytics">
+        <h6 class="mt-3">Data Analytics</h6>
+      </div>
+      <div class="py-3 col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3208/3208707.png" width="80" alt="Marketing tools">
+        <h6 class="mt-3">Smart Tools</h6>
+      </div>
+      <div class="py-3 col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149644.png" width="80" alt="Strategy">
+        <h6 class="mt-3">Effective Strategies</h6>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Chart.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Chart Scroll Animation Script -->
+<script>
+  let chartInitialized = false; // prevent multiple animations
+
+  function createGrowthChart() {
+    const ctx = document.getElementById('growthChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        datasets: [{
+          label: 'Performance Growth',
+          data: [10, 20, 28, 35, 50, 65, 80],
+          borderColor: '#007bff',
+          backgroundColor: 'rgba(0,123,255,0.1)',
+          borderWidth: 3,
+          tension: 0.4,
+          fill: true,
+          pointRadius: 4,
+          pointBackgroundColor: '#007bff'
+        }]
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 2000,
+          easing: 'easeOutQuart'
+        },
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true } }
+      }
+    });
+  }
+
+  // Trigger chart when visible
+  const section = document.querySelector('#data-driven');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !chartInitialized) {
+        createGrowthChart();
+        chartInitialized = true;
+        observer.disconnect(); // stop observing once triggered
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(section);
+</script>
 
 
+<!-- Professional Content Creation Section -->
+<section class="section-spacer-xxl" id="content-creation">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Image / video preview -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="/images/webSiteImages/cont.png" width="580" alt="Social Media Content" class="img-fluid animate-fade">
+      </div>
+
+      <!-- Text content -->
+      <div class="col-md-6">
+        <h2 class="fw-bold text-dark mb-3">Professional Content Creation</h2>
+        <p class="text-muted mb-3">
+          We don’t just manage campaigns — we create <strong>eye-catching, high-quality content</strong> that connects with your audience. 
+          From social media posts and ads to professional photo & video sessions, 
+          every piece of content is crafted to represent your brand in the best way.
+        </p>
+        <p class="text-muted mb-3">
+          Our creative team designs visuals that tell stories, 
+          build trust, and drive engagement. Because in today’s digital world, 
+          <strong>professional content is what makes your brand stand out.</strong>
+        </p>
+
+        <ul class="list-unstyled text-muted">
+          <li>✅ High-quality visuals & videos</li>
+          <li>✅ Engaging posts for social media</li>
+          <li>✅ Consistent branding across platforms</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.animate-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.animate-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+
+<script>
+const fadeElements = document.querySelectorAll('.animate-fade');
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+fadeElements.forEach(el => fadeObserver.observe(el));
+</script>
 
 
 <!--CARDS-->
