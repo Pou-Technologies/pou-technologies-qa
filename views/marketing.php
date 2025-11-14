@@ -65,9 +65,9 @@ include('../includes/header.php');
                 <div class="card service-card">
                     <img src="/images/webSiteImages/social.png" class="card-img-top" alt="Servicio 1">
                     <div class="card-body">
-                        <h5 class="card-title">Social Media Marketing</h5>
+                        <h5 class="card-title">Social Media Management</h5>
                         <p class="card-text">We manage your social media accounts, creating engaging content and advertising campaigns to increase your visibility and engagement.</p>
-                        <!-- <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a> -->
+                        <a href="/views/socialMedia.php" class="btn btn-outline-primary mt-auto">Learn More</a>
                     </div>
                 </div>
             </div>
