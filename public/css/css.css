@@ -38,7 +38,7 @@
     padding-bottom: 8rem !important;
 }
 
-/* Opcional: Define una versión más grande aún */
+/* Opcional:Define una versión más grande aún */
 .section-spacer-xxl {
     padding-top: 12rem !important;
     padding-bottom: 12rem !important;
@@ -85,7 +85,6 @@
 }
 
 /*HEADER*/
-
 .header-tr {
     height: 95px;
     padding: 0;
