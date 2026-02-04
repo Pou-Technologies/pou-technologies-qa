@@ -1,0 +1,554 @@
+.full-height {
+    height: 100vh;
+    /* Ocupa el 100% de la altura de la ventana del navegador */
+    display: flex;
+    flex-direction: column;
+    /* Coloca los elementos en una columna */
+    justify-content: flex-start;
+    /* Alinea los elementos al inicio del contenedor */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+}
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+/* Custom CSS - Archivo: style.css */
+
+/*
+* Sección de Espaciado Reutilizable
+* Crea un margen vertical mucho mayor que el py-5 de Bootstrap
+*/
+.section-spacer-xl {
+    /* Espacio superior e inferior grande, aproximadamente el doble que py-5 */
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+}
+
+/* Opcional: Define una versión más grande aún */
+.section-spacer-xxl {
+    padding-top: 12rem !important;
+    padding-bottom: 12rem !important;
+}
+
+/* Opcional: Solo un gran margen inferior para separar el contenido */
+.margin-bottom-xl {
+    margin-bottom: 6rem !important;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: white;
+}
+
+/*COLORES PARA LETRAS*/
+#multicolor {
+    font-size: 6rem !important;
+    /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: 500 !important;
+    background: linear-gradient(90deg, #0097ee, #b838c9, #048eff) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+}
+
+#colora {
+    font-size: 1em;
+    /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: normal;
+    background: linear-gradient(90deg, #0097ee, #385dc9, #f294ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+#tornasol-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/*HEADER*/
+
+.header-tr {
+    height: 95px;
+    padding: 0;
+}
+
+@media screen and (max-width: 367px) {
+    .header-tr {
+        height: initial;
+    }
+}
+
+/* Asegura que el botón de toggler esté encima de otros elementos */
+.navbar-toggler {
+    position: relative;
+    z-index: 1051;
+    /* Debe ser mayor que el z-index del menú */
+}
+
+/* Asegura que el menú desplegable esté encima de otros elementos */
+.navbar-collapse {
+
+    top: 100%;
+    /* Ajusta según sea necesario */
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    /* Debe ser menor que el z-index del botón de toggler */
+}
+
+
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    /* Asegura que la sección ocupe toda la altura de la ventana del navegador */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image-container {
+    position: absolute;
+    top: -6%;
+    /* Ajusta este valor para subir la imagen */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    object-position: center top;
+    /* Ajusta la posición de la imagen */
+}
+
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+    .hero-section {
+        height: 100vh;
+        /* Asegura que ocupe toda la altura */
+    }
+
+    .hero-image-container {
+        top: 0;
+        /* Ajusta la posición de la imagen para que no esté elevada */
+    }
+
+    .hero-image {
+        height: 100%;
+        /* Aumenta el tamaño de la imagen para ocupar más espacio */
+        object-position: center center;
+        /* Centra la imagen completamente */
+    }
+}
+
+/* HERO TEXT */
+.hero-text {
+    position: relative;
+    z-index: 1;
+    /* Asegura que el texto esté por encima de la imagen */
+    color: inherit;
+    /* Mantiene el color original del texto */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    padding: 20px;
+    /* Ajusta el padding según sea necesario */
+    margin: 0;
+    /* Asegura que no haya desplazamiento del texto */
+}
+
+
+
+
+
+
+/*Movimiento en la zona principal*/
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Movimiento feature box*/
+.featureBox1,
+.featureBox2,
+.featureBox3 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.featureBox1.visible,
+.featureBox2.visible,
+.featureBox3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*
+Numbers appear
+ */
+.icon-section {
+    /*background-color: #333; !* Ajusta el color según el esquema *!*/
+    padding: 40px 0;
+}
+
+.icon-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon-img {
+    width: 50px;
+    height: 50px;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/*
+breakdown transition
+
+ */
+#breakdown {
+    opacity: 0;
+    /* Oculto por defecto */
+    transition: opacity 1s ease-in-out;
+    /* Transición suave de opacidad */
+}
+
+#breakdown.visible {
+    opacity: 1;
+    /* Visible cuando se añade la clase 'visible' */
+}
+
+/*NUMBER*/
+.number {
+    font-family: 'Roboto', sans-serif;
+    /* Cambia 'Roboto' a la fuente que desees */
+    font-size: 2rem;
+    /* Ajusta el tamaño según sea necesario */
+}
+
+/*Card movement*/
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/*FADEIN ONE BY ONE PROJECT*/
+
+/* Estilo base para el fade-in */
+.fade-in-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Cuando el elemento se vuelve visible, agregamos esta clase */
+.fade-in-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Estilo para la versión de escritorio */
+.hero-text h1 {
+    margin-left: -10px;
+}
+
+.hero-text p.lead {
+    margin-left: -110px;
+}
+
+/*Movimiento en las imagenes de project*/
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.expandable-image {
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: auto;
+}
+
+.image-container:hover .expandable-image {
+    transform: scale(1.2);
+    /* La imagen se agranda un 20% */
+}
+
+
+
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#cookie-banner button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#cookie-banner button:hover {
+    background-color: #45a049;
+}
+
+/* What is WebSphere Section */
+.what-is-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.what-is-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.what-is-section p {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+/* Fondo opcional para diferenciar la sección */
+.solutions-section {
+    background: linear-gradient(to bottom right, #8643d3, #eef2f3);
+}
+
+/* Línea decorativa bajo el título */
+.section-line {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #007bff, #00d4ff);
+    margin: 8px auto 0;
+}
+
+/* Estilo de cada enlace */
+.solution-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: white;
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.solution-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    background: #a626d8;
+    color: white;
+}
+
+
+
+
+/* login.css */
+.login-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/webSiteImages/bgSeo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+}
+
+.login-section .card {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.login-section .form-label {
+    font-weight: 500;
+}
+
+
+/* PLAY VIDEO */
+.video-container {
+    position: relative;
+    display: inline-block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.video-container:hover .play-button {
+    background: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.share-buttons i {
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.share-buttons i:hover {
+    transform: scale(1.2);
+}
+
+/* PREMIUM STYLES (Added for Consistency) */
+
+/* Gradient Buttons */
+.btn-tornasol {
+    background: linear-gradient(90deg, #0d6efd, #6f42c1, #d63384);
+    background-size: 200% auto;
+    color: white !important;
+    border: none;
+    transition: all 0.4s ease;
+    animation: gradientMove 5s ease infinite;
+}
+
+.btn-tornasol:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(111, 66, 193, 0.4);
+    background-position: right center;
+}
+
+/* Gradient Text for Headings/Footer */
+.text-gradient-footer {
+    background: linear-gradient(90deg, #0d6efd, #d63384);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* Social Icons Hover - High Specificity */
+.social-icon-link {
+    color: #1a1a1a !important;
+    /* Force base color */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+}
+
+.social-icon-link:hover {
+    transform: translateY(-5px) scale(1.2);
+    text-decoration: none;
+}
+
+/* Target the icon specifically within the hovered link */
+.social-icon-link:hover .bi-instagram {
+    color: #d62976 !important;
+}
+
+.social-icon-link:hover .bi-facebook {
+    color: #1877f2 !important;
+}
+
+.social-icon-link:hover .bi-tiktok {
+    color: #000000 !important;
+    text-shadow: 2px 2px 0px rgba(0, 255, 255, 0.5), -2px -2px 0px rgba(255, 0, 0, 0.5);
+}
+
+.social-icon-link:hover .bi-youtube {
+    color: #ff0000 !important;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
